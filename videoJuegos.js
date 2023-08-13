@@ -3,7 +3,7 @@ const videoJuegos = [
         id: 1,
         nombre: "Resident Evil 4 RE",
         precio: 10420,
-        img: "./PS5/Re4 RemakePS5.jpg",
+        img: "./PS5/RE4 RemakePS5.jpg",
         cantidad: 1,
     },
     {
@@ -39,7 +39,7 @@ const videoJuegos = [
         id: 6,
         nombre: "The Last Of Us",
         precio: 11990,
-        img: "./PS5/ThelastOfUsPS5.jpg",
+        img: "./PS5/TheLastOfUsPS5.jpg",
         cantidad: 1,
     }
 ]
