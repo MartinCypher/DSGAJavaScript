@@ -67,7 +67,19 @@ const pintarCarrito = () => {
     const compraTotal = document.createElement("div");
     compraTotal.className = "total-content";
     compraTotal.innerHTML = `Total a pagar: ${total}$`;
-    modalContainer.appendChild (compraTotal)
+    modalContainer.appendChild (compraTotal);
+
+
+    const finalizarCompra = document.createElement ("button");
+    finalizarCompra.className = "finalizar-compra";
+    finalizarCompra.innerText = ("Finalizar Compra");
+    modalContainer.appendChild(finalizarCompra);
+
+    finalizarCompra.addEventListener ("click", () => {
+        window.location.href="finalizarcompra.html";
+    });
+
+
 };
 
 verCarrito.addEventListener ("click", pintarCarrito);
@@ -87,10 +99,11 @@ const eliminarJuego = () => {
 const carritoContador = () => {
     cantidadCarrito.style.display = "block"; 
 
-    const carritoLenght = carrito.length;
-    localStorage.setItem ("carritoLenght", JSON.stringify(carritoLenght));
+    const carritoLength = carrito.length;
 
-    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLenght"));
+    localStorage.setItem ("carritoLength", JSON.stringify(carritoLength));
+
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 
 };
 

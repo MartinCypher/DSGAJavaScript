@@ -35,7 +35,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
+    background-image: url(./PS5/BannerPagina.jpg);
   }
   
   .banner-container {
@@ -201,3 +201,25 @@ body {
   .restar {
     cursor: pointer;
   }
+
+  .finalizar-compra {
+    text-decoration: none;
+    display:inline-block;
+    margin-bottom: 10px;
+    width:30%;
+    padding:20px;
+    border: 3px solid black;
+    border-radius:50px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    font-size: 20px;
+  }
+  .finalizar-compra:hover{
+    background:black;
+    color:white;
+  }
+
+
