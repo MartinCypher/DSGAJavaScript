@@ -76,7 +76,22 @@ const pintarCarrito = () => {
     modalContainer.appendChild(finalizarCompra);
 
     finalizarCompra.addEventListener ("click", () => {
-        window.location.href="finalizarcompra.html";
+        Toastify({
+            text: "Felicidades por su compra",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: false,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a)",
+              borderRadius: "2rem",
+              fontSize: "0,75rem"
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
     });
 
 

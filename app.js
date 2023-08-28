@@ -2,6 +2,7 @@ const contenidoCarrito = document.getElementById ("carritoContJS");
 const verCarrito = document.getElementById ("verCarrito")
 const modalContainer = document.getElementById ("modal-container")
 const cantidadCarrito = document.getElementById ("cantidadCarrito")
+const finalizarCompra = document.getElementById ("finalizarCompraCaja")
 
 /** Carrito va a ser lo que se guardo en el storage y || en el caso de que el usuario no haya añadido o borrado los productos */
 
